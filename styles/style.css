@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 10;
+    box-sizing: border-box;
+}
+
+html, body {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+section {
+    background-color: black;
+    height: 100vh;
+    scroll-snap-align: center;
+}
+
+.content {
+    height: 100vh;
+    overflow-y: scroll;
+    position: absolute;
+    top: 0px;
+    right: 0px !important;
+    left: 0px;
+    scroll-snap-type: y proximity;
+}
+
+.main-illustration {
+    position: absolute;
+    z-index: -1;
+}
+
+.section1 {
+    margin-top: 100vh;
+}
+
+.section2 {
+    background-color: red;
+}
