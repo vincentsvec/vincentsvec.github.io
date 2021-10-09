@@ -12,7 +12,6 @@ let foreground = document.getElementById("foreground");
 
 function animateScroll() {
     let value = content.scrollTop
-    console.log(value, window.innerHeight)
 
     if (value <= window.innerHeight) {
         sun.style.transform = "translate(0vh, " + value * 0.05 + "vh)";
@@ -20,3 +19,28 @@ function animateScroll() {
         birds.style.transform = "translate(" + value * 0.01 + "vh, " + value * (-0.01) + "vh)";
     }
 }
+
+// removes illustration on smaller screens
+let illustration = document.getElementById("main-illustration");
+let background = document.getElementById("background")
+let body = document.querySelector("body");
+var removed = false;
+
+if (window.innerWidth <= 1215) {
+    illustration.remove()
+    removed = true;
+} else {
+    background.remove()
+}
+
+window.addEventListener("resize", function () {
+    if (window.innerWidth <= 1215) {
+        body.append(background)
+        illustration.remove()
+        removed = true
+    } else if (window.innerWidth > 1215 && removed) {
+        body.append(illustration)
+        background.remove()
+        removed = false
+    }
+})

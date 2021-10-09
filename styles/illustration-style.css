@@ -13,6 +13,14 @@
     z-index: 0;
 }
 
+#hills {
+    width: 100%;
+    z-index: 3;
+    position: absolute;
+    left: 0;
+    top: 20vh;
+}
+
 #sun {
     position: absolute;
     top: 50%;
@@ -22,42 +30,6 @@
     z-index: 1;
     margin-left: -200px;
     margin-top: -200px;
-}
-
-#mountains {
-    position: absolute;
-    width: 1920px;
-    top: 10%;
-    z-index: 2;
-    left: 50%;
-    margin-left: -960px;
-}
-
-#hills {
-    position: absolute;
-    width: 1920px;
-    z-index: 4;
-    top: 33%;
-    left: 50%;
-    margin-left: -960px;
-}
-
-#hills-2 {
-    position: absolute;
-    width: 1920px;
-    top: 18%;
-    left: 50%;
-    z-index: 3;
-    margin-left: -960px;
-}
-
-#forrest {
-    position: absolute;
-    width: 1920px;
-    top: 44%;
-    left: 50%;
-    z-index: 5;
-    transform: translate(-50%, 0%)
 }
 
 #birds {
@@ -97,7 +69,7 @@
 }
 
 #name {
-    z-index: 9;
+    z-index: 0;
     position: absolute;
     top: 45%;
     left: 50%;
@@ -112,44 +84,50 @@
     display: flex;
 }
 
-@media screen and (max-width: 768px) {
-    #foreground {
-        width: 100%;
-        margin: 0px;
-        left: 0px;
-    }
+#background {
+    height: 100vh;
+    background: linear-gradient(225deg, #ff7954, #a73c5a, #631e50);
+    background-size: 600% 600%;
 
-    #hills {
-        width: 100%;
-        margin: 0px;
-        left: 0px;
-        top: 55%;
-    }
-
-    #hills-2 {
-        width: 100%;
-        margin: 0px;
-        left: 0px;
-        top: 50%;
-    }
-
-    #sun {
-        width: 30vh;
-        height: 30vh;
-        left: 50%;
-        margin: -25%;
-
-    }
-
-    #birds {
-        width: 8vh;
-        height: 5vh;
-    }
-
+    -webkit-animation: AnimationName 7s ease infinite;
+    -moz-animation: AnimationName 7s ease infinite;
+    animation: AnimationName 7s ease infinite;
 }
 
-@media screen and (max-width: 860px) {
+@-webkit-keyframes AnimationName {
+    0%{background-position:90% 0%}
+    50%{background-position:11% 100%}
+    100%{background-position:90% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:90% 0%}
+    50%{background-position:11% 100%}
+    100%{background-position:90% 0%}
+}
+@keyframes AnimationName { 
+    0%{background-position:90% 0%}
+    50%{background-position:11% 100%}
+    100%{background-position:90% 0%}
+}
+
+.swoosh {
+    display: none;
+}
+
+@media screen and (max-width: 1215px) {
     #name {
-        font-size: 2rem;
+        justify-content: left;
+        padding-left: 10%;
+        top: 40%;
+    }
+
+    .swoosh {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #name {
+        font-size: 3rem;
     }
 }
