@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sue+Ellen+Francisco&display=swap');
 
 
 .main-illustration {
@@ -58,24 +58,14 @@
     margin-left: -960px;
 }
 
-#filter {
-    position: absolute;
-    width: 1920px;
-    height: 100%;
-    top: 0%;
-    left: 50%;
-    z-index: 8;
-    transform: translate(-50%, 0%)
-}
-
 #name {
     z-index: 0;
     position: absolute;
-    top: 45%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -45%);
-    font-family: 'Poppins', sans-serif;
-    font-size: 4rem;
+    font-family: 'Sue Ellen Francisco', cursive;
+    font-size: 6rem;
     font-weight: 900;
     color: #331f39;
     width: 100%;
@@ -86,7 +76,7 @@
 
 #background {
     height: 100vh;
-    background: linear-gradient(225deg, #ff7954, #a73c5a, #631e50);
+    background: linear-gradient(225deg, #11224d, #0967ab, #030D28);
     background-size: 600% 600%;
 
     -webkit-animation: AnimationName 7s ease infinite;
@@ -114,11 +104,16 @@
     display: none;
 }
 
+.filter {
+    filter: hue-rotate(250deg)
+}
+
 @media screen and (max-width: 1215px) {
     #name {
         justify-content: left;
         padding-left: 10%;
         top: 40%;
+        color: #fff;
     }
 
     .swoosh {
