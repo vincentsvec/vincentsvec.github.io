@@ -9,7 +9,6 @@ let hills = document.getElementById("hills");
 let birds = document.getElementById("birds");
 let foreground = document.getElementById("foreground");
 
-
 function animateScroll() {
     let value = content.scrollTop
 
@@ -26,7 +25,7 @@ let background = document.getElementById("background")
 let body = document.querySelector("body");
 var removed = false;
 
-if (window.innerWidth <= 1215) {
+if (window.innerWidth <= 1415) {
     illustration.remove()
     removed = true;
 } else {
@@ -34,11 +33,11 @@ if (window.innerWidth <= 1215) {
 }
 
 window.addEventListener("resize", function () {
-    if (window.innerWidth <= 1215) {
+    if (window.innerWidth <= 1415) {
         body.append(background)
         illustration.remove()
         removed = true
-    } else if (window.innerWidth > 1215 && removed) {
+    } else if (window.innerWidth > 1415 && removed) {
         body.append(illustration)
         background.remove()
         removed = false

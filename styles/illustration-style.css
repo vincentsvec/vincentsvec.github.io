@@ -72,6 +72,16 @@
     align-items: center;
     justify-content: center;
     display: flex;
+    animation: fadeInAnimation ease 2s;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
 }
 
 #background {
@@ -108,7 +118,7 @@
     filter: hue-rotate(250deg)
 }
 
-@media screen and (max-width: 1215px) {
+@media screen and (max-width: 1415px) {
     #name {
         justify-content: left;
         padding-left: 10%;
