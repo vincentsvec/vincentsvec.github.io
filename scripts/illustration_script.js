@@ -18,7 +18,7 @@ function animateScroll() {
 // removes illustration on smaller screens
 let illustration = document.getElementById("main-illustration");
 let background = document.getElementById("background")
-let body = document.querySelector("body");
+let page = document.getElementById("main-content-container");
 var removed = false;
 
 if (window.innerWidth <= 1415) {
@@ -30,11 +30,11 @@ if (window.innerWidth <= 1415) {
 
 window.addEventListener("resize", function () {
     if (window.innerWidth <= 1415) {
-        body.append(background)
+        page.append(background)
         illustration.remove()
         removed = true
     } else if (window.innerWidth > 1415 && removed) {
-        body.append(illustration)
+        page.append(illustration)
         background.remove()
         removed = false
     }

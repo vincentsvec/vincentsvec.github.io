@@ -11,43 +11,50 @@
 
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/illustration-style.css">
+    <link rel="stylesheet" href="styles/navbar.css">
 
 </head>
 
 <body>
-    <div id="background"></div>
-    <div class="swoosh"
-        style="height: 80px; overflow: hidden; position: absolute; background-color: transparent; width: 100%; top: 0px;">
-        <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
-            <path d="M162.49,-18.25 C149.99,150.00 463.32,-49.98 514.42,198.84 L500.00,0.00 L0.00,0.00 Z"
-                style="stroke: none; fill: #fff;"></path>
-        </svg>
-    </div>
-    <div class="swoosh"
-        style="height: 80px; overflow: hidden; position: absolute; background-color: transparent; width: 100%; bottom: 0px;">
-        <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
-            <path d="M-4.80,-4.44 C141.33,175.16 353.19,-49.98 486.53,285.69 L500.00,150.00 L0.00,150.00 Z"
-                style="stroke: none; fill: #fff;"></path>
-        </svg>
+    <div id=main-content-container>
+        <navbar>
+            <ul>
+                <li><a class="link-nav active home" onclick="home()">Home</a></li>
+                <li><a class="link-nav about-me" href="#section1">About me</a></li>
+                <li><a class="link-nav skills" href="#section2">Skills</a></li>
+                <li><a class="link-nav contact" href="#section3">Contact</a></li>
+            </ul>
+        </navbar>
+        <div id="background"></div>
+        <div class="swoosh"
+            style="height: 80px; overflow: hidden; position: absolute; background-color: transparent; width: 100%; bottom: 0px;">
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                <path d="M-4.80,-4.44 C141.33,175.16 353.19,-49.98 486.53,285.69 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: #fff;"></path>
+            </svg>
+        </div>
+
+        <h2 id="name">Vincent Svec</h2>
+        <div class="main-illustration" id="main-illustration">
+
+            <img id="bg" src="assets/illustration/background.png"></img>
+            <img id="hills" src="assets/illustration/hills.png"></img>
+            <img id="sun" src="assets/illustration/sun.png"></img>
+            <img id="birds" src="assets/illustration/birds.png"></img>
+            <img id="water" src="assets/illustration/water.png"></img>
+            <img id="foreground" src="assets/illustration/foreground.png"></img>
+
+        </div>
+        <div class="content" id="content">
+            <section id="section1"></section>
+            <section id="section2"></section>
+            <section id="section3"></section>
+        </div>
     </div>
 
-    <h2 id="name">Vincent Svec</h2>
-    <div class="main-illustration" id="main-illustration">
+    <script type="text/javascript" src="scripts/illustration_script.js"></script>
+    <script type="text/javascript" src="scripts/navbar_script.js"></script>
 
-        <img id="bg" src="assets/illustration/background.png"></img>
-        <img id="hills" src="assets/illustration/hills.png"></img>
-        <img id="sun" src="assets/illustration/sun.png"></img>
-        <img id="birds" src="assets/illustration/birds.png"></img>
-        <img id="water" src="assets/illustration/water.png"></img>
-        <img id="foreground" src="assets/illustration/foreground.png"></img>
-
-    </div>
-    <div class="content" id="content">
-        <section class="section1"></section>
-        <section class="section2"></section>
-    </div>
-
-    <script type="text/javascript" src="scripts/scripts.js"></script>
 
 </body>
 

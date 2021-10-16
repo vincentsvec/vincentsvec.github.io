@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -13,6 +15,7 @@ section {
     height: 100vh;
     scroll-snap-align: center;
     width: 100%;
+    
 }
 
 .content {
@@ -26,16 +29,11 @@ section {
     scroll-snap-type: y proximity;
 }
 
-.main-illustration {
-    position: absolute;
-    z-index: -1;
-}
-
-.section1 {
+#section1 {
     margin-top: 100vh;
     background-color: #030D28;
 }
 
-.section2 {
+#section2 {
     background-color: red;
 }
