@@ -34,3 +34,8 @@ function addActive(current) {
 function home() {
     content.scrollTo({ top: 0 })
 }
+
+// fixes reload bug
+window.onload = function () {
+    content.scrollTo({ top: 0 })
+}
