@@ -27,6 +27,7 @@ section {
     right: 0px !important;
     left: 0px;
     scroll-snap-type: y proximity;
+    scroll-behavior: smooth;
 }
 
 #section1 {
