@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Sue+Ellen+Francisco&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
 
 .main-illustration {
     height: 100vh;
@@ -91,6 +90,8 @@
 #description {
     visibility: hidden;
     font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    font-size: 2rem;
     color: #f5f5f5;
 }
 
@@ -134,7 +135,7 @@
         padding-left: 10%;
         top: 40%;
         color: #f5f5f5;
-        font-weight: 100;
+        font-weight: 200;
     }
 
     #description {
@@ -159,6 +160,6 @@
     }
 
     #description {
-        font-size: 10px;
+        font-size: 1rem;
     }
 }
