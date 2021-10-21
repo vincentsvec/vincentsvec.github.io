@@ -1,10 +1,8 @@
-let content = document.getElementById("content")
-content.onscroll = function () { animateScroll() };
-
 let sun = document.getElementById("sun");
 let birds = document.getElementById("birds");
 let foreground = document.getElementById("foreground");
 
+// function called from animations.js
 function animateScroll() {
     let value = content.scrollTop
 

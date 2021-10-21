@@ -9,6 +9,7 @@
 html, body {
     max-width: 100%;
     overflow: hidden;
+    min-height: 400px;
 }
 
 section {
@@ -16,11 +17,13 @@ section {
     scroll-snap-align: center;
     width: 100%;
     background: linear-gradient(#030D28, #061849);
+    min-height: 400px;
     
 }
 
 .content {
     height: 100vh;
+    min-height: 400px;
     width: 100%;
     overflow-y: scroll;
     position: absolute;
@@ -74,6 +77,24 @@ section {
     height: 25%;
     width: 100%;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20%;
+}
+
+.card-container {
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card {
+    width: 25%;
+    height: 70%;
+    background-color: red;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -89,4 +110,10 @@ section {
 #about-me {
     margin-top: 100vh;
     background-color: #030D28;
+}
+
+@media screen and (max-width: 768px){
+    .page-illustration{
+        padding: 0px 10px;
+    }
 }
