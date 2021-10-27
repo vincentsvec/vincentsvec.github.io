@@ -58,21 +58,30 @@
                         <p>Hi, I am Vincent</p>
                         <p>I am a developer, speedcuber and an artist</p>
                     </div>
-                    <div class="page-illustration">
-
-                        <div class="card" id="programming-icon">
+                    <div class="icons-container">
+                        <div class="card" id="programming-card">
                             <img class="icon" src="assets/icons/programming_icon.png"></img>
+                            <h2 class="card-title">Programming</h2>
+                            <button class="card-btn">Explore</button>
                         </div>
-                        <div class="card" id="rubiks-cube-icon">
+                        <div class="card" id="rubiks-cube-card">
                             <img class="icon" src="assets/icons/rubiks_cube_icon.png"></img>
+                            <h2 class="card-title">Speedcubing</h2>
+                            <button class="card-btn">Explore</button>
                         </div>
-                        <div class="card" id="art-icon">
+                        <div class="card" id="art-card" onclick="rotateCard()">
                             <img class="icon" src="assets/icons/art_icon.png"></img>
+                            <h2 class="card-title">Art and Music</h2>
+                            <button class="card-btn">Explore</button>
                         </div>
                     </div>
                 </div>
             </section>
-            <section id="skills"></section>
+            <section id="skills">
+                <div class="content-container">
+                    <div class="page-header">Skills</div>
+                </div>
+            </section>
             <section id="contact">
                 <div id="socials">
                     <img class="social" src="assets/socials/facebook.png"></img>
@@ -85,8 +94,8 @@
 
     <script type="text/javascript" src="scripts/illustration_script.js"></script>
     <script type="text/javascript" src="scripts/navbar_script.js"></script>
+    <script type="text/javascript" src="scripts/icons_script.js"></script>
     <script type="text/javascript" src="scripts/animations.js"></script>
-
 
 </body>
 

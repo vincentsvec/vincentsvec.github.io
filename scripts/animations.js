@@ -1,21 +1,24 @@
-// skills cards
-let programming = document.querySelector("#programming-icon")
-let rubiks_cube = document.querySelector("#rubiks-cube-icon")
-let art = document.querySelector("#art-icon")
-
 let content = document.getElementById("content")
-content.onscroll = function () { animateScroll(); animateIcons() };
+content.onscroll = function () { animateScroll(); animateIcons(); animateCards() };
 
-var trigger = content.clientHeight + content.clientHeight * 0.4
+let programming = document.querySelector("#programming-card")
+let rubiks_cube = document.querySelector("#rubiks-cube-card")
+let art = document.querySelector("#art-card")
+let card_text = document.querySelectorAll(".card-title")
+let card_btns = document.querySelectorAll(".card-btn")
 
-function animateIcons() {
-    var offset_x = content.clientWidth / 50000
+function animateCards() {
+    if (value >= content.clientHeight * 2 - 10) {
+        programming.style.height = "200%";
+        rubiks_cube.style.height = "200%";
+        art.style.height = "200%";
 
-    if (value >= trigger && value < content.clientHeight * 2) {   // value = content.scrollTop
-        programming.style.transform = "translate(" + (value - trigger) * -offset_x + "vh, " + (value - trigger) * 0.12 + "vh)"
-        rubiks_cube.style.transform = "translate(0vh, " + (value - trigger) * 0.12 + "vh) "
-        art.style.transform = "translate(" + (value - trigger) * offset_x + "vh, " + (value - trigger) * 0.12 + "vh)"
-    } else if (value < content.clientWidth * 2) {
+        card_text.forEach(element => {
+            element.style.opacity = "1";
+        })
 
+        card_btns.forEach(btn => {
+            btn.style.opacity = "1";
+        })
     }
 }
