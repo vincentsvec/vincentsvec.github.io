@@ -27,7 +27,7 @@ if (window.innerWidth <= 1415) {
 }
 
 window.addEventListener("resize", function () {
-    if (window.innerWidth <= 1415) {
+    if (window.innerWidth <= 1415 || window.innerHeight >= 1740) {
         page.append(background)
         illustration.remove()
         removed = true

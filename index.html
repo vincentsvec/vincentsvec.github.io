@@ -69,7 +69,7 @@
                             <h2 class="card-title">Speedcubing</h2>
                             <button class="card-btn">Explore</button>
                         </div>
-                        <div class="card" id="art-card" onclick="rotateCard()">
+                        <div class="card" id="art-card">
                             <img class="icon" src="assets/icons/art_icon.png"></img>
                             <h2 class="card-title">Art and Music</h2>
                             <button class="card-btn">Explore</button>
@@ -79,14 +79,23 @@
             </section>
             <section id="skills">
                 <div class="content-container">
-                    <div class="page-header">Skills</div>
+                    <div class="page-header" id="skills-header">Skills</div>
                 </div>
             </section>
             <section id="contact">
-                <div id="socials">
-                    <img class="social" src="assets/socials/facebook.png"></img>
-                    <img class="social" src="assets/socials/instagram.png"></img>
-                    <img class="social" src="assets/socials/twitter.png"></img>
+                <div class="content-container">
+                    <h2 class="page-header">Contact me</h2>
+                    <form class="contact-form">
+                        <input type="text" id="input-name" placeholder="Your name">
+                        <input type="text" id="input-email" placeholder="Email adress">
+                        <input type="text" id="input-subject" placeholder="Subject">
+                        <textarea type="text" id="input-message" placeholder="Message"></textarea>
+                    </form>
+                    <div id="socials">
+                        <img class="social" src="assets/socials/facebook.png"></img>
+                        <img class="social" src="assets/socials/instagram.png"></img>
+                        <img class="social" src="assets/socials/twitter.png"></img>
+                    </div>
                 </div>
             </section>
         </div>

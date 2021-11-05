@@ -18,7 +18,24 @@ section {
     width: 100%;
     background: linear-gradient(#030D28, #061849);
     min-height: 400px;
-    
+}
+
+input {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: black;
+    width: 100%;
+    margin-bottom: 30px;
+    height: 30px;
+    background-color: #0077b6;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+}
+
+::placeholder {
+    color: black;
+    opacity: 0.5;
 }
 
 .content {
@@ -76,6 +93,7 @@ section {
 .icons-container {
     height: 25%;
     width: 100%;
+    max-height: 150vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -139,6 +157,15 @@ section {
     color: white;
 }
 
+.contact-form {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0% 30%; 
+}
+
 #socials {
     bottom: 0px;
     width: 100%;
@@ -154,6 +181,18 @@ section {
 
 #contact {
     height: 100vh;
+}
+
+#input-message {
+    resize: none;
+    width: 100%;
+    height: 100px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #0077b6;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 15px;
 }
 
 @media screen and (max-width: 1415px) {
@@ -194,4 +233,7 @@ section {
         height: 200vh;
     }
 
+    #skills-header {
+        height: 13%;
+    }
 }

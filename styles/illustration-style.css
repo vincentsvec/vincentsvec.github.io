@@ -42,7 +42,7 @@
 #water {
     position: absolute;
     z-index: 6;
-    width: 1920px;
+    width: 100%;
     top: 65%;
     left: 0%;
     left: 50%;
@@ -129,7 +129,7 @@
     filter: hue-rotate(250deg)
 }
 
-@media screen and (max-width: 1415px) {
+@media screen and (max-width: 1415px), (min-height: 1740px){
     #name {
         justify-content: left;
         padding-left: 10%;
@@ -154,7 +154,7 @@
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px){
     #name {
         font-size: 3rem;
     }
