@@ -86,13 +86,14 @@
                 <div class="content-container">
                     <h2 class="page-header">Contact me</h2>
                     <form class="contact-form" action="https://formsubmit.co/vincentsvec.alias@gmail.com" method="POST">
-                        <input type="text" name="name" id="input-name" placeholder="Your name">
-                        <input type="text" name="email" id="input-email" placeholder="Email adress" type="email">
-                        <input type="text" name="subject" id="input-subject" placeholder="Subject">
+                        <input type="text" name="name" id="input-name" placeholder="Your name" required>
+                        <input type="text" name="email" id="input-email" placeholder="Email adress" type="email"
+                            required>
+                        <input type="text" name="subject" id="input-subject" placeholder="Subject" required>
                         <textarea type="text" name="message" id="input-message" placeholder="Message"></textarea>
                         <input type="hidden" name="_captcha" value="false">
-                        <button class="g-recaptcha" data-sitekey="6LeI9hodAAAAAISfioDZ951PdO2i6l9doz3XwYCh"
-                            data-callback='onSubmit' data-action='submit' name="submit">Submit</button>
+                        <input type="hidden" name="_next" value="https://vincentsvec.github.io/thankyou.html">
+                        <input type=submit id="submit" /></a>
                     </form>
                     <div id="socials">
                         <img class="social" src="assets/socials/facebook.png"></img>
@@ -108,12 +109,6 @@
     <script type="text/javascript" src="scripts/navbar_script.js"></script>
     <script type="text/javascript" src="scripts/icons_script.js"></script>
     <script type="text/javascript" src="scripts/animations.js"></script>
-    <script src="https://www.google.com/recaptcha/api.js"></script>
-    <script>
-        function onSubmit(token) {
-            document.getElementById("demo-form").submit();
-        }
-    </script>
 </body>
 
 </html>
