@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#0077b6">
+    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
 
     <title>Vincent Svec</title>
 
@@ -84,7 +85,7 @@
             </section>
             <section id="contact">
                 <div class="content-container">
-                    <h2 class="page-header">Contact me</h2>
+                    <h2 class="page-header" id="contact-header">Contact me</h2>
                     <form class="contact-form" action="https://formsubmit.co/vincentsvec.alias@gmail.com" method="POST">
                         <input type="text" name="name" id="input-name" placeholder="Your name" required>
                         <input type="text" name="email" id="input-email" placeholder="Email adress" type="email"
@@ -93,12 +94,19 @@
                         <textarea type="text" name="message" id="input-message" placeholder="Message"></textarea>
                         <input type="hidden" name="_captcha" value="false">
                         <input type="hidden" name="_next" value="https://vincentsvec.github.io/thankyou.html">
-                        <input type=submit id="submit" /></a>
+                        <div class="g-recaptcha" data-sitekey="6LcIiBwdAAAAAJKs7l_WjZMSVRgY_Usf0_L3oKQn"></div>
+                        <input id="submit" type="submit" value="Submit" name=submit>
                     </form>
                     <div id="socials">
-                        <img class="social" src="assets/socials/facebook.png"></img>
-                        <img class="social" src="assets/socials/instagram.png"></img>
-                        <img class="social" src="assets/socials/twitter.png"></img>
+                        <a href="https://www.facebook.com/profile.php?id=100009946125675" target=”_blank”>
+                            <img class="social" src="assets/socials/facebook.png" href=""></img>
+                        </a>
+                        <a href="https://www.instagram.com/svecvincent/" target=”_blank”>
+                            <img class="social" id="instagram" src="assets/socials/instagram.png"></img>
+                        </a>
+                        <a href="https://twitter.com/SvecVincent" target=”_blank”>
+                            <img class="social" src="assets/socials/twitter.png"></img>
+                        </a>
                     </div>
                 </div>
             </section>
@@ -109,6 +117,7 @@
     <script type="text/javascript" src="scripts/navbar_script.js"></script>
     <script type="text/javascript" src="scripts/icons_script.js"></script>
     <script type="text/javascript" src="scripts/animations.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </body>
 
 </html>
