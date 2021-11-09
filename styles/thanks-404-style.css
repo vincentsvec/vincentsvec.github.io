@@ -18,8 +18,21 @@ body {
 h1 {
     font-family: 'Poppins', sans-serif;
     color: #f5f5f5;
+    font-size: 3rem;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #f5f5f5;
+    font-size: 2rem;
 }
 
 a {
     color: #FD6051;
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 1rem;
+    }
 }
