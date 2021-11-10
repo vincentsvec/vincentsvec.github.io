@@ -7,11 +7,6 @@
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
     background: linear-gradient(#030D28, #061849);
 }
 
@@ -29,6 +24,14 @@ h2 {
 
 a {
     color: #FD6051;
+}
+
+.content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
 }
 
 @media screen and (max-width: 768px) {
