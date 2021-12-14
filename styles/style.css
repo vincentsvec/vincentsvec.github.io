@@ -94,6 +94,10 @@ button a:hover {
     font-weight: 100;
 }
 
+.page-text-description {
+    text-align: center;
+}
+
 .icons-container {
     height: 25%;
     width: 100%;
