@@ -32,3 +32,14 @@ function animateIcons() {
         finish = true;
     }
 }
+
+let skillslink = document.querySelector("#skills-link")
+
+skillslink.addEventListener("click", () => {
+    icons_container.style.paddingLeft = "5%"
+    icons_container.style.paddingRight = "5%"
+    icons_container.style.transform = "translate(0px, 650px)"
+
+    console.log(window.location.pathname)
+
+})
