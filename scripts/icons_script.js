@@ -58,5 +58,5 @@ var section = window.location.hash.substr(1);
 
 if (section == "skills" && content.clientWidth <= 768) {
     icons_container.style.height = "150%";
-    icons_container.style.transform = "translate(0px, 650px)";
+    icons_container.style.transform = "translate(0px, 580px)";
 }
