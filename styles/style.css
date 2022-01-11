@@ -229,7 +229,7 @@ button a:hover {
     }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1125px){
     input {
         margin-bottom: 10px;
         background-color: #f5f5f5
