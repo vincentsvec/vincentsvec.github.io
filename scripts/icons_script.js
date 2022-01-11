@@ -40,6 +40,6 @@ skillslink.addEventListener("click", () => {
     icons_container.style.paddingRight = "5%"
     icons_container.style.transform = "translate(0px, 650px)"
 
-    console.log(window.location.pathname)
+    console.log(window.location.pathna)
 
 })
