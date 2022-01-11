@@ -40,15 +40,14 @@ skillslink.addEventListener("click", () => {
     if (content.clientWidth <= 768) {
         icons_container.style.paddingLeft = "20%"
         icons_container.style.paddingRight = "20%"
+        icons_container.style.height = "150%";
+
     } else {
         icons_container.style.paddingLeft = "5%"
         icons_container.style.paddingRight = "5%"
     }
 
-    icons_container.style.transform = "translate(0px, 580px)"
-    icons_container.style.height = "150%";
-
-    console.log(window.location.pathname)
+    icons_container.style.transform = "translate(0px, " + content.clientHeight / 1.5 + "px)";
 
 })
 
@@ -58,5 +57,8 @@ var section = window.location.hash.substr(1);
 
 if (section == "skills" && content.clientWidth <= 768) {
     icons_container.style.height = "150%";
-    icons_container.style.transform = "translate(0px, 580px)";
+    icons_container.style.transform = "translate(0px, " + content.clientHeight / 1.5 + "px)";
+} else {
+    icons_container.style.height = "25%";
+    icons_container.style.transform = "translate(0px, " + content.clientHeight / 1.5 + "px)";
 }
