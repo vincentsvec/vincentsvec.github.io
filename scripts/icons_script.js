@@ -45,7 +45,7 @@ skillslink.addEventListener("click", () => {
         icons_container.style.paddingRight = "5%"
     }
 
-    icons_container.style.transform = "translate(0px, 650px)"
+    icons_container.style.transform = "translate(0px, 580px)"
     icons_container.style.height = "150%";
 
     console.log(window.location.pathname)
