@@ -45,6 +45,8 @@ navbar {
     position: fixed;
     width: 100%;
     z-index: 1;
+    background-color: #030D28;
+    box-shadow: 0px 10px 20px #030D28;
 }
 
 .title {
@@ -55,7 +57,7 @@ navbar {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 5%;
+    margin-top: 15%;
 }
 
 .description-container {
@@ -117,7 +119,7 @@ navbar {
     bottom: 10px;
 }
 
-@media screen and (max-width: 1125px) {
+@media screen and (max-width: 768px) {
     ul {
         padding: 30px 10%;
     }

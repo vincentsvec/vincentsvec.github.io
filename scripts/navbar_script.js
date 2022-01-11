@@ -31,3 +31,15 @@ function home() {
 window.onload = function () {
     content.scrollTo({ top: 0 })
 }
+
+content.addEventListener("scroll", function () {
+    var navbar = document.querySelector("navbar");
+
+    if (content.scrollTop >= window.innerHeight) {
+        navbar.style.background = "#030D28";
+        navbar.style.boxShadow = "0px 10px 20px #030D28"
+    } else {
+        navbar.style.background = "transparent";
+        navbar.style.boxShadow = "none"
+    }
+})
