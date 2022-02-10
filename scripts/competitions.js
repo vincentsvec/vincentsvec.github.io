@@ -36,7 +36,7 @@ window.onscroll = function () {
         }
     })
 
-    if (window.scrollY >= document.documentElement.scrollHeight - document.documentElement.clientHeight - 30) {
+    if (window.scrollY >= document.documentElement.scrollHeight - document.documentElement.clientHeight - 80) {
         wca_image.style.opacity = "1"
         wca_link.style.opacity = "1"
     } else {
