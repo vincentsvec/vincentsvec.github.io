@@ -256,4 +256,12 @@ navbar {
         font-size: 10px;
     }
 
+    .roadmap {
+        margin-top: 20px;
+    }
+
+    .project-cover {
+        height: 30vh;
+    }
+
 }
