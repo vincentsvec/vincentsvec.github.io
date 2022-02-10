@@ -10,7 +10,7 @@
 
 body {
     min-height: 100vh;
-    background: linear-gradient(#030D28, #061849);
+    background: #030D28;
     display: flex;
     flex-direction: column;
 }
@@ -57,7 +57,7 @@ navbar {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 15%;
+    margin-top: 9%;
 }
 
 .description-container {
@@ -67,16 +67,44 @@ navbar {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    font-size: 12px;
+}
+
+.statistics {
+    width: 50%;
+}
+
+.statistics-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 5px;
+    padding: 0vw 15vw;
+}
+
+.statistics-container:nth-child(2){
+    justify-content: space-between;
 }
 
 .content-description {
-    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 15px;
     color: #f5f5f5;
     font-weight: 100;
     height: 5%;
     margin-top: 20px;
 }
 
+.content-description-sub {
+    display: flex; 
+    flex-direction: row; 
+    width: 100%;
+}
 
 .project-container {
     width: 100%;
@@ -119,6 +147,75 @@ navbar {
     bottom: 10px;
 }
 
+.roadmap {
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    height: 1700px;
+}
+
+.line {
+    border-left: 6px solid #0077b6;
+    height: 1400px;
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    margin-left: -3px;
+}
+
+.competition {
+    color: #f5f5f5;
+    display: flex;
+    flex-direction: row;
+    font-weight: 100;
+    align-items: center;
+}
+
+.competition p {
+    opacity: 0;
+    transition: opacity 1.5s;
+}
+
+.first-competition p{
+    opacity: 1;
+}
+
+.pointer {
+    background-color: #FD6051;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.roadmap-cover {
+    position: fixed;
+    bottom: 0;
+    height: 40vh;
+    width: 100%;
+    background-color: #030D28;
+    box-shadow: 0px -30px 20px #030D28;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0077b6;
+    flex-direction: column;
+}
+
+.roadmap-cover img {
+    margin-top: 20px;
+    width: 100px;
+    height: 100px;
+    opacity: 0;
+    transition: opacity 1.5s;
+}
+
+.roadmap-cover p {
+    opacity: 0;
+    transition: opacity 1.5s;
+}
+
 @media screen and (max-width: 768px) {
     ul {
         padding: 30px 10%;
@@ -133,6 +230,10 @@ navbar {
         font-size: 14px;
     }
 
+    .content-description-sub {
+        flex-direction: column;
+    }
+
     .project-container {
         padding-top: 50px;
     }
@@ -140,6 +241,19 @@ navbar {
     .project-card {
         width: 70%;
         border-radius: 10px 10px 0px 0px;
+    }
+
+    .statistics {
+        width: 100%;
+    }
+
+    .statistics-container {
+        margin-top: 10px;
+        padding: 0vw 20vw
+    }
+
+    .competition p {
+        font-size: 10px;
     }
 
 }
